@@ -1,0 +1,12 @@
+<%-include ("cabecalho.ejs");%>
+<form method="post">
+    Atividade: <input type="text" name="atividade" reandoly value="<%=Usuario.atividade%>">
+    <br>
+    <select name="status">
+        <option value="realizado">Realizado</option>
+        <option value="não realizado" selected  >Não realizado</option>
+      </select>
+      <input type=submit value="Enviar">
+</form>
+    <%-include("rodape.ejs");%>
+        <!-- comentário --> 

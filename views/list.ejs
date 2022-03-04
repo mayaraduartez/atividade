@@ -1,0 +1,35 @@
+<%-include ("cabecalho.ejs");%>
+    <table>
+        <tr>
+            <th>ATIVIDADE</th>
+            <th>STATUS</th>
+            <th>EDITAR</th>
+            <th>DELETAR</th>
+        </tr>
+
+        <!-- forEach é a função de executar um array (array é meu "Usuarios") --> 
+
+        <% Usuarios.forEach( function (usuario){%> 
+        <!-- ta impriminto todos usuarios do meu array Usuario, em cada parte da linha (tr) que são os (td) --> 
+
+        <tr>
+            <td><%=usuario.atividade%></td> <!-- o <%=usuario._id%> imprime cada usuario do meu array Usuario --> 
+            <td><%=usuario.status%></td> 
+
+            <td>
+                <a href="/edt/<%=usuario._id%>">
+                    <img  src="images/edit.png">
+                </a>
+            </td>
+            <td>
+                <a href="/del/<%=usuario._id%>">
+                    <img style="width: 60px;" src="images/lixeira.png">
+                </a>
+            </td>
+
+
+        </tr>
+
+        <% })%>
+    </table>
+<%-include("rodape.ejs");%>
