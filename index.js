@@ -36,6 +36,14 @@ app.get("/", function (req, res) {
   });
 });
 
+app.post("/", function (req, res) {
+  Usuario.find({ atividade: new RegExp(req.body.pesquisar, "i") }).then(
+    function (docs) {
+      res.render("list.ejs", { Usuarios: docs });
+    }
+  );
+});
+
 app.get("/edt/:id", function (req, res) {
   Usuario.findById(req.params.id).then(function (docs) {
     console.log(docs);
