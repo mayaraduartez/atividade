@@ -1,26 +1,20 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
-/* Elemento de tag <body> */
 body{
     background-color: #F0F8FF;
     font-family: sans-serif;
     font-size: 1em;
     color: #59429d;
-    margin-left: 10%;
+    margin-left: 35%;
     margin-top: 2%;
     justify-content: center;
 }
 
-/* Elementos de tag <fieldset>*/
-fieldset {
-    border: 0;
-}
-
-
-/* Elementos de tags <body>, <input>, <Select>, <textarea> e <button> */
 input, select, textarea, button {
     font-family: sans-serif;
     font-size: 1em;
@@ -28,37 +22,36 @@ input, select, textarea, button {
     
 }
 
-.input {
+
+a img{
+    width: 40px;
+}
+
+.inputadd{
+    font-family: sans-serif;
     font-size: 1em;
-    background: #59429d;
+    border: 0;
+    margin-bottom: 1em;
+    padding: 0.2em 0em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.input{
+    padding: 10px 1px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 50%;
+    font-family: sans-serif;
+    font-size: 1em;
+    font-size: 1em;
+    background-color: #59429d;
     border: 0;
     margin-bottom: 1em;
     color: #ffffff;
     padding: 0.2em 0em;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-    position: absolute;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
-}
-
-
-
-/* Elementos de classe botão e de tag <select> */
-.botao, select{
-    cursor: pointer;
-} 
-
-a img{
-    width: 40px;
-}
-
-input{
-    padding: 10px 1px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    width: 50%;
 }
 
 input[type="submit"]{
